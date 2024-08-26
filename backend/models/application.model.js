@@ -14,8 +14,8 @@ const applicationSchema = new mongoose.Schema({
     },
     status:{
         type:String,
-        // ref:'User',
-        // required:'true'
+        ref:'User',
+         required:'true',
         enum:['Pending', 'accepted', 'rejected'],
         default :'Pending'
     }
